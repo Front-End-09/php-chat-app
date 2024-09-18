@@ -225,11 +225,22 @@ form .name-details .field:last-child{
     box-shadow: inset 0 32px 32px -32px rgb(0 0 0 / 5%),
                 inset 0 -32px 32px -32px rgb(0 0 0 / 5%);
 }
+.chat-box .chat{
+    margin: 16px 0;
+}
 .chat-box .chat p{
+    overflow: hidden;
     padding: 8px 16px;
+    box-shadow: 0 0 32px rgb(0 0 0 / 8%),
+                0 16px 16px -16px rgb(0 0 0 / 10%);
 }
 .chat-box .outgoing{
     display: flex;
+    align-items: flex-end;
+}
+.chat-box .outgoing img{
+    height: 35px;
+    width: 35px;
 }
 .outgoing .details{
     margin-left: auto;
@@ -239,4 +250,22 @@ form .name-details .field:last-child{
     background: #333;
     color: #fff;
     border-radius: 18px 18px 0 18px;
+}
+.chat-box .incomimg{
+    display: flex;
+    align-items: flex-end;
+}
+.chat-box .incomimg img{
+    height: 35px;
+    width: 35px;
+}
+.incomimg .details{
+    margin-left: 10px;
+    margin-right: auto;
+    max-width: calc(100% - 130px);
+}
+.incomimg .details p{
+    color: #333;
+    background: #fff;
+    border-radius: 18px 18px 18px 0;
 }

@@ -161,16 +161,32 @@ form .name-details .field:last-child{
     font-size: 16px;
     border-radius: 5px 0 0 5px;
     outline: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.users .search input.active{
+    opacity: 1;
+    pointer-events: auto;
 }
 .users .search button{
     width: 47px;
     height: 42px;
+    border: none;
     outline: none;
     cursor: pointer;
     font-size: 17px;
+    color: #333;
+    background: #fff;
+    border-radius: 0 5px 5px 0;
+    transition: all 0.2s ease;
+}
+.users .search button.active{
     color: #fff;
     background: #333;
-    border-radius: 0 5px 5px 0;
+}
+.users .search button.active i::before{
+   content: "\f00d";
 }
 .users-list{
     max-height: 300px;
@@ -224,7 +240,7 @@ form .name-details .field:last-child{
 }
 .chat-box{
     overflow-y: auto;
-    height: 500px;
+    height: 400px;
     background: #f7f7f7;
     padding: 10px 30px 200px 30px;
     box-shadow: inset 0 32px 32px -32px rgb(0 0 0 / 5%),

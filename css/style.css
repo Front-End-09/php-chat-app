@@ -40,7 +40,8 @@ body {
     text-align: center;
     border-radius: 5px;
     margin-bottom: 10px;
-    border: 1px solid #f5c6cb
+    border: 1px solid #f5c6cb;
+    display: none;
 }
 .form form .name-details{
     display: flex;
@@ -74,7 +75,7 @@ form .name-details .field:last-child{
 .form form .image input{
     font-size: 17px;
 }
-.form form .bottom input{
+.form form .button input{
     margin-right: 13px;
     height: 45px;
     border: none;
